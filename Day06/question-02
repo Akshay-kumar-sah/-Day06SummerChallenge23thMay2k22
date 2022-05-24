@@ -1,0 +1,23 @@
+Question 02 : LeetCode 55 Jump Game
+ Solution : 
+ class Solution {
+    public boolean canJump(int[] nums) {
+        
+        int revSum=nums.length-1;
+       
+        for(int i=nums.length-1;i>=0;i--){
+        
+            if(i+nums[i]>=revSum) {
+                revSum=i;
+            }
+                
+            
+        }
+          if(revSum==0) return true;
+        else{
+            return false;
+        }
+    
+        
+    }
+}
