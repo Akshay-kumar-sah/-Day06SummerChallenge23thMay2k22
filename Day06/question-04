@@ -1,0 +1,14 @@
+Question 04 : LeetCode 169 Majority Elements
+Solution :
+T(O(logn)
+class Solution {
+    public int majorityElement(int[] nums) {
+        
+        Arrays.sort(nums);
+        
+        return nums[nums.length/2];
+        
+    }  
+}
+
+T(O(n)
